@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		B9D576732992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D576722992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift */; };
-		B9D576752992B3EA00A0CF97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D576742992B3EA00A0CF97 /* ContentView.swift */; };
 		B9D576772992B3ED00A0CF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D576762992B3ED00A0CF97 /* Assets.xcassets */; };
 		B9D5767A2992B3ED00A0CF97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D576792992B3ED00A0CF97 /* Preview Assets.xcassets */; };
+		B9D576832992BE1000A0CF97 /* FindVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D576822992BE1000A0CF97 /* FindVelocity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B9D5766F2992B3EA00A0CF97 /* EndOfModInteractiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndOfModInteractiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D576722992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfModInteractiveAppApp.swift; sourceTree = "<group>"; };
-		B9D576742992B3EA00A0CF97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B9D576762992B3ED00A0CF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9D576792992B3ED00A0CF97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9D576822992BE1000A0CF97 /* FindVelocity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVelocity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				B9D576722992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift */,
-				B9D576742992B3EA00A0CF97 /* ContentView.swift */,
+				B9D576812992B40A00A0CF97 /* Model */,
+				B9D576802992B40400A0CF97 /* Views */,
 				B9D576762992B3ED00A0CF97 /* Assets.xcassets */,
 				B9D576782992B3ED00A0CF97 /* Preview Content */,
 			);
@@ -65,6 +66,21 @@
 				B9D576792992B3ED00A0CF97 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B9D576802992B40400A0CF97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9D576822992BE1000A0CF97 /* FindVelocity.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9D576812992B40A00A0CF97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D576752992B3EA00A0CF97 /* ContentView.swift in Sources */,
 				B9D576732992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift in Sources */,
+				B9D576832992BE1000A0CF97 /* FindVelocity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
