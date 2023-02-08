@@ -88,7 +88,18 @@ struct FindVelocity: View {
                 
                 Spacer()
                 
-               
+                Text("v = vo + at")
+                    .bold()
+                    .font(.largeTitle)
+                
+                HStack{
+                    Text("v =")
+                        .bold()
+                        .font(.largeTitle)
+                    Text(velocityResult)
+                }
+                
+                Spacer()
                 
                 
                 
