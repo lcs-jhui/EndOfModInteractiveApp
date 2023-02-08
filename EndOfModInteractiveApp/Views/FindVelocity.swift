@@ -38,7 +38,7 @@ struct FindVelocity: View {
         return initialVelocity + ( acceleration * time )
     }
     
-    //Show Result with two decimal points
+    //Show Result
     var velocityResult: String {
         
         //Check if there is a valid velocity
@@ -50,6 +50,7 @@ struct FindVelocity: View {
         return velocity.formatted(.number.precision(.fractionLength(5)))
     }
     
+    //Show Result with two decimal place
     var velocityResultTwoDecimal: String {
         
         //Check if there is a valid velocity
