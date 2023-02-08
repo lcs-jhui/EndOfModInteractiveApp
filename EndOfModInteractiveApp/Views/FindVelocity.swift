@@ -56,10 +56,43 @@ struct FindVelocity: View {
         NavigationView{
             VStack{
                 
+                Group{
+                    HStack{
+                        Text("Initial Velocity:")
+                            .bold()
+                            .font(.title2)
+                        
+                        TextField("Enter an initial velocity...", text: $inputInitialVeolcity)
+                    }
+                }
+                
+                Group{
+                    HStack{
+                        Text("Acceleration:")
+                            .bold()
+                            .font(.title2)
+                        
+                        TextField("Enter an acceleration...", text: $inputAcceleration)
+                    }
+                }
+                
+                Group{
+                    HStack{
+                        Text("Time:")
+                            .bold()
+                            .font(.title2)
+                        
+                        TextField("Enter a time...", text: $inputTime)
+                    }
+                }
+                
+                Spacer()
+                
+               
                 
                 
                 
-            }
+            }.padding()
             .navigationTitle("Find The Velocity")
         }
     }
