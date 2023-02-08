@@ -66,73 +66,72 @@ struct FindVelocity: View {
     
     
     var body: some View {
-        NavigationView{
-            VStack{
-                
-                Group{
-                    HStack{
-                        Text("Initial Velocity:")
-                            .bold()
-                            .font(.title2)
-                        
-                        TextField("Enter an initial velocity...", text: $inputInitialVeolcity)
-                    }
+        VStack{
+            
+            Group{
+                HStack{
+                    Text("Initial Velocity:")
+                        .bold()
+                        .font(.title2)
+                    
+                    TextField("Enter an initial velocity...", text: $inputInitialVeolcity)
                 }
-                
-                Group{
-                    HStack{
-                        Text("Acceleration:")
-                            .bold()
-                            .font(.title2)
-                        
-                        TextField("Enter an acceleration...", text: $inputAcceleration)
-                    }
+            }
+            
+            Group{
+                HStack{
+                    Text("Acceleration:")
+                        .bold()
+                        .font(.title2)
+                    
+                    TextField("Enter an acceleration...", text: $inputAcceleration)
                 }
-                
-                Group{
-                    HStack{
-                        Text("Time:")
-                            .bold()
-                            .font(.title2)
-                        
-                        TextField("Enter a time...", text: $inputTime)
-                    }
+            }
+            
+            Group{
+                HStack{
+                    Text("Time:")
+                        .bold()
+                        .font(.title2)
+                    
+                    TextField("Enter a time...", text: $inputTime)
                 }
-                
-                Spacer()
-                
-                Text("v = vo + at")
+            }
+            
+            Spacer()
+            
+            Text("v = vo + at")
+                .bold()
+                .font(.largeTitle)
+            
+            HStack{
+                Text("v =")
                     .bold()
                     .font(.largeTitle)
-                
-                HStack{
-                    Text("v =")
-                        .bold()
-                        .font(.largeTitle)
-                    Text(velocityResult)
-                        .font(.largeTitle)
-                }
-                
-                HStack{
-                    Text("v =")
-                        .bold()
-                        .font(.largeTitle)
-                    Text(velocityResultTwoDecimal)
-                        .font(.largeTitle)
-                }
-                
-                Spacer()
-                
-                
-                
-            }.padding()
+                Text(velocityResult)
+                    .font(.largeTitle)
+            }
+            
+            HStack{
+                Text("v =")
+                    .bold()
+                    .font(.largeTitle)
+                Text(velocityResultTwoDecimal)
+                    .font(.largeTitle)
+            }
+            
+            Spacer()
+            
+            
+        }.padding()
             .navigationTitle("Find The Velocity")
-        }
     }
 }
 
 struct FindVelocity_Previews: PreviewProvider {
     static var previews: some View {
-        FindVelocity()
+        NavigationView{
+            FindVelocity()
+        }
     }
 }

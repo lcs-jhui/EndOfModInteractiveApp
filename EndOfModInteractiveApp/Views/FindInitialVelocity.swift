@@ -61,7 +61,6 @@ struct FindInitialVelocity: View {
     
     
     var body: some View {
-        NavigationView{
             VStack{
                 
                 Group{
@@ -70,7 +69,7 @@ struct FindInitialVelocity: View {
                             .bold()
                             .font(.title2)
                         
-                        TextField("Enter an initial velocity...", text: $inputVelocity)
+                        TextField("Enter a velocity...", text: $inputVelocity)
                     }
                 }
                 
@@ -96,12 +95,12 @@ struct FindInitialVelocity: View {
                 
                 Spacer()
                 
-                Text("v = vo + at")
+                Text("vo = v - at")
                     .bold()
                     .font(.largeTitle)
                 
                 HStack{
-                    Text("v =")
+                    Text("vo =")
                         .bold()
                         .font(.largeTitle)
                     Text(initialVelocityResult)
@@ -109,7 +108,7 @@ struct FindInitialVelocity: View {
                 }
                 
                 HStack{
-                    Text("v =")
+                    Text("vo =")
                         .bold()
                         .font(.largeTitle)
                     Text(initialVelocityResultTwoDecimal)
@@ -122,11 +121,13 @@ struct FindInitialVelocity: View {
                 
             }.padding()
             .navigationTitle("Find The Initial Velocity")
-        }    }
+        }
 }
 
 struct FindInitialVelocity_Previews: PreviewProvider {
     static var previews: some View {
-        FindInitialVelocity()
+        NavigationView{
+            FindInitialVelocity()
+        }
     }
 }

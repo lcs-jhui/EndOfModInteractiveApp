@@ -65,7 +65,6 @@ struct FindAcceleration: View {
     
     
     var body: some View {
-        NavigationView{
             VStack{
                 
                 Group{
@@ -91,34 +90,34 @@ struct FindAcceleration: View {
                 
                 Group{
                     HStack{
-                        Text("Acceleration:")
+                        Text("Time:")
                             .bold()
                             .font(.title2)
                         
-                        TextField("Enter an acceleration...", text: $inputAcceleration)
+                        TextField("Enter a time...", text: $inputTime)
                     }
                 }
                 
                 
                 Spacer()
                 
-                Text("v = vo + at")
+                Text("a = v - vo / t")
                     .bold()
                     .font(.largeTitle)
                 
                 HStack{
-                    Text("v =")
+                    Text("a =")
                         .bold()
                         .font(.largeTitle)
-                    Text(timeResult)
+                    Text(accelerationResult)
                         .font(.largeTitle)
                 }
                 
                 HStack{
-                    Text("v =")
+                    Text("a =")
                         .bold()
                         .font(.largeTitle)
-                    Text(timeResultTwoDecimal)
+                    Text(accelerationResultTwoDecimal)
                         .font(.largeTitle)
                 }
                 
@@ -127,12 +126,14 @@ struct FindAcceleration: View {
                 
                 
             }.padding()
-            .navigationTitle("Find The Time")
-        }    }
+            .navigationTitle("Find The Acceleration")
+        }
 }
 
 struct FindAcceleration_Previews: PreviewProvider {
     static var previews: some View {
-        FindAcceleration()
+        NavigationView{
+            FindAcceleration()
+        }
     }
 }

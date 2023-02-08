@@ -65,7 +65,6 @@ struct FindTime: View {
     }
     
     var body: some View {
-        NavigationView{
             VStack{
                 
                 Group{
@@ -102,12 +101,12 @@ struct FindTime: View {
                 
                 Spacer()
                 
-                Text("v = vo + at")
+                Text("t = v - vo / a")
                     .bold()
                     .font(.largeTitle)
                 
                 HStack{
-                    Text("v =")
+                    Text("t =")
                         .bold()
                         .font(.largeTitle)
                     Text(timeResult)
@@ -115,7 +114,7 @@ struct FindTime: View {
                 }
                 
                 HStack{
-                    Text("v =")
+                    Text("t =")
                         .bold()
                         .font(.largeTitle)
                     Text(timeResultTwoDecimal)
@@ -128,11 +127,13 @@ struct FindTime: View {
                 
             }.padding()
             .navigationTitle("Find The Time")
-        }    }
+        }
 }
 
 struct FindTime_Previews: PreviewProvider {
     static var previews: some View {
-        FindTime()
+        NavigationView{
+            FindTime()
+        }
     }
 }
