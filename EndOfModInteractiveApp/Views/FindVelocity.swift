@@ -34,6 +34,7 @@ struct FindVelocity: View {
             return nil
         }
         
+        //Calculate velocity
         return initialVelocity + ( acceleration * time )
     }
     
