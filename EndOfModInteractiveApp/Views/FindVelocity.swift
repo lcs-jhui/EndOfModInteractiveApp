@@ -37,13 +37,24 @@ struct FindVelocity: View {
         return initialVelocity + ( acceleration * time )
     }
     
-    //Show Result
+    //Show Result with two decimal points
     var velocityResult: String {
         
         //Check if there is a valid velocity
         guard let velocity = calculatedVelocity else {
             //else provide an error message
-            return "Cannot be found. Please provide valid input"
+            return "Cannot be found."
+        }
+        //If there is a valid velocity
+        return velocity.formatted(.number.precision(.fractionLength(5)))
+    }
+    
+    var velocityResultTwoDecimal: String {
+        
+        //Check if there is a valid velocity
+        guard let velocity = calculatedVelocity else {
+            //else provide an error message
+            return "Cannot be found."
         }
         //If there is a valid velocity
         return velocity.formatted(.number.precision(.fractionLength(2)))
@@ -97,6 +108,15 @@ struct FindVelocity: View {
                         .bold()
                         .font(.largeTitle)
                     Text(velocityResult)
+                        .font(.largeTitle)
+                }
+                
+                HStack{
+                    Text("v =")
+                        .bold()
+                        .font(.largeTitle)
+                    Text(velocityResultTwoDecimal)
+                        .font(.largeTitle)
                 }
                 
                 Spacer()
