@@ -13,6 +13,9 @@
 		B9A0A7C1299456E00017C5DD /* FindUnknownListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0A7C0299456E00017C5DD /* FindUnknownListView.swift */; };
 		B9A0A7C529945AA20017C5DD /* FormulaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0A7C429945AA20017C5DD /* FormulaListView.swift */; };
 		B9A0A7C729945E850017C5DD /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0A7C629945E850017C5DD /* Results.swift */; };
+		B9B5EC252995812400AB0631 /* FindVelocityTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B5EC242995812400AB0631 /* FindVelocityTabView.swift */; };
+		B9B5EC282995844B00AB0631 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B5EC272995844B00AB0631 /* HistoryView.swift */; };
+		B9B5EC2A2995852900AB0631 /* ResultVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B5EC292995852900AB0631 /* ResultVIew.swift */; };
 		B9D576732992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D576722992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift */; };
 		B9D576772992B3ED00A0CF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D576762992B3ED00A0CF97 /* Assets.xcassets */; };
 		B9D5767A2992B3ED00A0CF97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D576792992B3ED00A0CF97 /* Preview Assets.xcassets */; };
@@ -26,6 +29,9 @@
 		B9A0A7C0299456E00017C5DD /* FindUnknownListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindUnknownListView.swift; sourceTree = "<group>"; };
 		B9A0A7C429945AA20017C5DD /* FormulaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaListView.swift; sourceTree = "<group>"; };
 		B9A0A7C629945E850017C5DD /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		B9B5EC242995812400AB0631 /* FindVelocityTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVelocityTabView.swift; sourceTree = "<group>"; };
+		B9B5EC272995844B00AB0631 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		B9B5EC292995852900AB0631 /* ResultVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVIew.swift; sourceTree = "<group>"; };
 		B9D5766F2992B3EA00A0CF97 /* EndOfModInteractiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndOfModInteractiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D576722992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfModInteractiveAppApp.swift; sourceTree = "<group>"; };
 		B9D576762992B3ED00A0CF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +59,14 @@
 			path = ListView;
 			sourceTree = "<group>";
 		};
+		B9B5EC26299581C100AB0631 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				B9B5EC242995812400AB0631 /* FindVelocityTabView.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
 		B9D576662992B3EA00A0CF97 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +90,7 @@
 				B9A0A7C229945A630017C5DD /* ListView */,
 				B9D576812992B40A00A0CF97 /* Model */,
 				B9D576802992B40400A0CF97 /* Views */,
+				B9B5EC26299581C100AB0631 /* TabViews */,
 				B9D576762992B3ED00A0CF97 /* Assets.xcassets */,
 				B9D576782992B3ED00A0CF97 /* Preview Content */,
 			);
@@ -97,6 +112,8 @@
 				B9A0A7BA29944B700017C5DD /* FindInitialVelocity.swift */,
 				B9A0A7BC299450120017C5DD /* FindTime.swift */,
 				B9A0A7BE299453360017C5DD /* FindAcceleration.swift */,
+				B9B5EC272995844B00AB0631 /* HistoryView.swift */,
+				B9B5EC292995852900AB0631 /* ResultVIew.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,12 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9B5EC252995812400AB0631 /* FindVelocityTabView.swift in Sources */,
 				B9A0A7BF299453360017C5DD /* FindAcceleration.swift in Sources */,
 				B9D576732992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift in Sources */,
 				B9A0A7C729945E850017C5DD /* Results.swift in Sources */,
 				B9A0A7C1299456E00017C5DD /* FindUnknownListView.swift in Sources */,
 				B9A0A7BD299450120017C5DD /* FindTime.swift in Sources */,
+				B9B5EC2A2995852900AB0631 /* ResultVIew.swift in Sources */,
 				B9A0A7C529945AA20017C5DD /* FormulaListView.swift in Sources */,
+				B9B5EC282995844B00AB0631 /* HistoryView.swift in Sources */,
 				B9D576832992BE1000A0CF97 /* FindVelocity.swift in Sources */,
 				B9A0A7BB29944B700017C5DD /* FindInitialVelocity.swift in Sources */,
 			);
