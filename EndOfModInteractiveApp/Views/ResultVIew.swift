@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ResultVIew: View {
+    
+    //MARK: Stored Properties
+    let priorResult: Result
+    
+    //MARK: Computed Properties
     var body: some View {
         
         HStack{
@@ -22,10 +27,10 @@ struct ResultVIew: View {
             Spacer()
             
             VStack(alignment: .trailing, spacing: 3){
-                Text("Velocity")
-                Text("Initial Velocity")
-                Text("Acceleration")
-                Text("Time")
+                Text("\(priorResult.velocity) m/s")
+                Text("\(priorResult.initialVelocity) m/s")
+                Text("\(priorResult.acceleration) m/s2")
+                Text("\(priorResult.time) s")
             }
             
         }.padding()
@@ -34,6 +39,6 @@ struct ResultVIew: View {
 
 struct ResultVIew_Previews: PreviewProvider {
     static var previews: some View {
-        ResultVIew()
+        ResultVIew(priorResult: exampleResultForPreviews)
     }
 }

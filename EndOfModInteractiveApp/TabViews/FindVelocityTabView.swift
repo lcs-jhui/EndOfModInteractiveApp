@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FindVelocityTabView: View {
     
-//    @State var history: [History] = []
+    @State var history: [History] = []
     
     var body: some View {
         TabView {
@@ -18,7 +18,7 @@ struct FindVelocityTabView: View {
                     Text("Tab 1")
                 }
             
-            FindVelocity()
+            HistoryView()
                 .tabItem {
                     Text("Tab 2")
                 }

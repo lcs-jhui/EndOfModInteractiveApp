@@ -20,3 +20,5 @@ struct Result: Identifiable {
 let exampleResultForPreviews = Result(velocity: "85.00", initialVelocity: "10.00", time: "15.00", acceleration: "5.00")
 
 let secondExampleResultForPreviews = Result(velocity: "240.00", initialVelocity: "40.00", time: "20.00", acceleration: "10.00")
+
+let historyForPreviews = [exampleResultForPreviews, secondExampleResultForPreviews]
