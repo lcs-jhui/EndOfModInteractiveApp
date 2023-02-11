@@ -11,7 +11,7 @@ import SwiftUI
 struct EndOfModInteractiveAppApp: App {
     var body: some Scene {
         WindowGroup {
-            FindVelocity()
+            FormulaListView()
         }
     }
 }

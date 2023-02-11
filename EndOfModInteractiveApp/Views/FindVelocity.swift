@@ -14,6 +14,9 @@ struct FindVelocity: View {
     @State var inputTime = ""
     @State var inputAcceleration = ""
     
+    //Save the history
+    @Binding var history: [Result]
+    
     //MARK: Computed Properties
     
     //Calculate Velcotiy
@@ -120,6 +123,21 @@ struct FindVelocity: View {
                     .font(.largeTitle)
             }
             
+            //Save button
+            
+            Button(action: {
+                
+                let priorResult = Result(velocity: velocityResultTwoDecimal, initialVelocity: inputInitialVeolcity, time: inputTime, acceleration: inputAcceleration)
+                
+                //Save prior result
+                history.append(priorResult)
+                
+            }, label: {
+                Text("Save")
+                    .font(.headline.smallCaps())
+            })
+            .buttonStyle(.bordered)
+            
             Spacer()
             
             
@@ -131,7 +149,7 @@ struct FindVelocity: View {
 struct FindVelocity_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            FindVelocity()
+            FindVelocity(history: Binding.constant(historyForPreviews))
         }
     }
 }
