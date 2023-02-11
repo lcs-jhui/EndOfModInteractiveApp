@@ -98,12 +98,12 @@ struct FindInitialVelocity: View {
                 
                 Spacer()
                 
-                Text("vo = v - at")
+                Text("vₒ = v - at")
                     .bold()
                     .font(.largeTitle)
                 
                 HStack{
-                    Text("vo =")
+                    Text("vₒ =")
                         .bold()
                         .font(.largeTitle)
                     Text(initialVelocityResult)
@@ -111,7 +111,7 @@ struct FindInitialVelocity: View {
                 }
                 
                 HStack{
-                    Text("vo =")
+                    Text("vₒ =")
                         .bold()
                         .font(.largeTitle)
                     Text(initialVelocityResultTwoDecimal)

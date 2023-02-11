@@ -104,7 +104,7 @@ struct FindAcceleration: View {
                 
                 Spacer()
                 
-                Text("a = v - vo / t")
+                Text("a = v - vₒ / t")
                     .bold()
                     .font(.largeTitle)
                 

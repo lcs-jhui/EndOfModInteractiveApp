@@ -14,7 +14,7 @@ struct FormulaListView: View {
             NavigationLink(destination: {
                 FindUnknownListView()
             }, label: {
-                Text("v = vo + at")
+                Text("v = vₒ + at")
             })
         }.navigationTitle("Kinematics Formulas")
         

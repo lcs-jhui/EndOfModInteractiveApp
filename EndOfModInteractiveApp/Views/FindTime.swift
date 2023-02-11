@@ -105,7 +105,7 @@ struct FindTime: View {
                 
                 Spacer()
                 
-                Text("t = v - vo / a")
+                Text("t = v - vₒ / a")
                     .bold()
                     .font(.largeTitle)
                 

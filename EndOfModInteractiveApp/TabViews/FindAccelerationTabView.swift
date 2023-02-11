@@ -14,7 +14,7 @@ struct FindAccelerationTabView: View {
         TabView {
             FindAcceleration(history: $history)
                 .tabItem {
-                    Image(systemName: "atom")
+                    Image(systemName: "car.side.fill")
                     Text("Calculate")
                 }
             

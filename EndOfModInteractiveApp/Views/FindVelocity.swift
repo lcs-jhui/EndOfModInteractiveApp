@@ -103,7 +103,7 @@ struct FindVelocity: View {
             
             Spacer()
             
-            Text("v = vo + at")
+            Text("v = vₒ + at")
                 .bold()
                 .font(.largeTitle)
             

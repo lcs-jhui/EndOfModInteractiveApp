@@ -29,7 +29,7 @@ struct ResultVIew: View {
             VStack(alignment: .trailing, spacing: 3){
                 Text("\(priorResult.velocity) m/s")
                 Text("\(priorResult.initialVelocity) m/s")
-                Text("\(priorResult.acceleration) m/s2")
+                Text("\(priorResult.acceleration) m/s²")
                 Text("\(priorResult.time) s")
             }
             

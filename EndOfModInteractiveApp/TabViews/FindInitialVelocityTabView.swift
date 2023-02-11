@@ -14,7 +14,7 @@ struct FindInitialVelocityTabView: View {
         TabView {
             FindInitialVelocity(history: $history)
                 .tabItem {
-                    Image(systemName: "atom")
+                    Image(systemName: "figure.walk")
                     Text("Calculate")
                 }
             
