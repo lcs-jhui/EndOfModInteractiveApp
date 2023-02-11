@@ -25,13 +25,13 @@ struct FindUnknownListView: View {
                 })
                 
                 NavigationLink(destination: {
-                    FindTime()
+                    FindTimeTabView()
                 }, label: {
                     Text("Find The Time")
                 })
                 
                 NavigationLink(destination: {
-                    FindAcceleration()
+                    FindAccelerationTabView()
                 }, label: {
                     Text("Find The Acceleration")
                 })

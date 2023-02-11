@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct FindTimeTabView: View {
+    @State var history: [Result] = []
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            FindTime(history: $history)
+                .tabItem {
+                    Image(systemName: "atom")
+                    Text("Calculate")
+                }
+            
+            HistoryView(history: $history)
+                .tabItem {
+                    Image(systemName: "clock.fill")
+                    Text("History")
+                }
+        }
+        .navigationTitle("Find Time")
     }
 }
 

@@ -15,7 +15,8 @@ struct FindTime: View {
     @State var inputAcceleration = ""
     
     //Save history
-    
+    @Binding var history: [Result]
+
     
     
     //MARK: Computed Properties
@@ -124,6 +125,22 @@ struct FindTime: View {
                         .font(.largeTitle)
                 }
                 
+                Button(action: {
+                    
+                   let priorResult = Result(velocity: inputVelocity,
+                                            initialVelocity: inputInitialVeolcity,
+                                            time: timeResultTwoDecimal,
+                                            acceleration: inputAcceleration)
+                    
+                    //Save prior result
+                    history.append(priorResult)
+                    
+                }, label: {
+                    Text("Save")
+                        .font(.headline.smallCaps())
+                })
+                .buttonStyle(.bordered)
+                
                 Spacer()
                 
                 
@@ -136,7 +153,7 @@ struct FindTime: View {
 struct FindTime_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            FindTime()
+            FindTime(history: Binding.constant(historyForPreviews))
         }
     }
 }
