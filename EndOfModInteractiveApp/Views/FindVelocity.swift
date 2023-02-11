@@ -104,23 +104,22 @@ struct FindVelocity: View {
             Spacer()
             
             Text("v = vₒ + at")
-                .bold()
-                .font(.largeTitle)
+                .font(Font.custom("CourierNewPS-BoldMT", size: 40))
             
             HStack{
                 Text("v =")
-                    .bold()
-                    .font(.largeTitle)
+                    .font(Font.custom("CourierNewPSMT", size: 40))
+
                 Text(velocityResult)
-                    .font(.largeTitle)
+                    .font(Font.custom("CourierNewPSMT", size: 25))
             }
             
             HStack{
                 Text("v =")
-                    .bold()
-                    .font(.largeTitle)
+                    .font(Font.custom("CourierNewPSMT", size: 40))
+
                 Text(velocityResultTwoDecimal)
-                    .font(.largeTitle)
+                    .font(Font.custom("CourierNewPSMT", size: 25))
             }
             
             //Save button

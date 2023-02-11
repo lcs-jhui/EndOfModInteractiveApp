@@ -11,7 +11,9 @@ import SwiftUI
 struct EndOfModInteractiveAppApp: App {
     var body: some Scene {
         WindowGroup {
-            FormulaListView()
+            NavigationView{
+                FormulaListView()
+            }
         }
     }
 }

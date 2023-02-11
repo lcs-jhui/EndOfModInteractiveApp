@@ -106,23 +106,22 @@ struct FindTime: View {
                 Spacer()
                 
                 Text("t = v - vₒ / a")
-                    .bold()
-                    .font(.largeTitle)
+                    .font(Font.custom("CourierNewPS-BoldMT", size: 40))
+
                 
                 HStack{
                     Text("t =")
-                        .bold()
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 40))
                     Text(timeResult)
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 25))
                 }
                 
                 HStack{
                     Text("t =")
-                        .bold()
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 40))
+
                     Text(timeResultTwoDecimal)
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 25))
                 }
                 
                 Button(action: {

@@ -105,23 +105,23 @@ struct FindAcceleration: View {
                 Spacer()
                 
                 Text("a = v - vₒ / t")
-                    .bold()
-                    .font(.largeTitle)
+                    .font(Font.custom("CourierNewPS-BoldMT", size: 40))
+
                 
                 HStack{
                     Text("a =")
-                        .bold()
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 40))
+
                     Text(accelerationResult)
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 25))
                 }
                 
                 HStack{
                     Text("a =")
-                        .bold()
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 40))
+
                     Text(accelerationResultTwoDecimal)
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 25))
                 }
                 
                 Button(action: {

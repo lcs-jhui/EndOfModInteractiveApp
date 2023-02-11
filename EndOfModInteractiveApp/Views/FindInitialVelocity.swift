@@ -99,23 +99,23 @@ struct FindInitialVelocity: View {
                 Spacer()
                 
                 Text("vₒ = v - at")
-                    .bold()
-                    .font(.largeTitle)
+                    .font(Font.custom("CourierNewPS-BoldMT", size: 40))
+
                 
                 HStack{
                     Text("vₒ =")
-                        .bold()
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 40))
+
                     Text(initialVelocityResult)
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 25))
                 }
                 
                 HStack{
                     Text("vₒ =")
-                        .bold()
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 40))
+
                     Text(initialVelocityResultTwoDecimal)
-                        .font(.largeTitle)
+                        .font(Font.custom("CourierNewPSMT", size: 25))
                 }
                 
                 Button(action: {
