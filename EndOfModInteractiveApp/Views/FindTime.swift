@@ -14,6 +14,9 @@ struct FindTime: View {
     @State var inputVelocity = ""
     @State var inputAcceleration = ""
     
+    //Save history
+    
+    
     
     //MARK: Computed Properties
     

@@ -1,19 +1,18 @@
 //
-//  FindVelocityTabView.swift
+//  FindInitialVelocityTabView.swift
 //  EndOfModInteractiveApp
 //
-//  Created by Justin Hui on 9/2/2023.
+//  Created by Justin Hui on 11/2/2023.
 //
 
 import SwiftUI
 
-struct FindVelocityTabView: View {
-    
+struct FindInitialVelocityTabView: View {
     @State var history: [Result] = []
     
     var body: some View {
         TabView {
-            FindVelocity(history: $history)
+            FindInitialVelocity(history: $history)
                 .tabItem {
                     Image(systemName: "atom")
                     Text("Calculate")
@@ -25,12 +24,12 @@ struct FindVelocityTabView: View {
                     Text("History")
                 }
         }
-        .navigationTitle("Find Velocity")
+        .navigationTitle("Find Initial Velocity")
     }
 }
 
-struct FindVelocityTabView_Previews: PreviewProvider {
+struct FindInitialVelocityTabView_Previews: PreviewProvider {
     static var previews: some View {
-        FindVelocityTabView()
+        FindInitialVelocityTabView()
     }
 }

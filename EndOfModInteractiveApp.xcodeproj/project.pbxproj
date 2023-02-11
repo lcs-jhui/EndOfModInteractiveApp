@@ -16,6 +16,9 @@
 		B9B5EC252995812400AB0631 /* FindVelocityTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B5EC242995812400AB0631 /* FindVelocityTabView.swift */; };
 		B9B5EC282995844B00AB0631 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B5EC272995844B00AB0631 /* HistoryView.swift */; };
 		B9B5EC2A2995852900AB0631 /* ResultVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B5EC292995852900AB0631 /* ResultVIew.swift */; };
+		B9BBDB1A29981B8F004F3381 /* FindInitialVelocityTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BBDB1929981B8F004F3381 /* FindInitialVelocityTabView.swift */; };
+		B9BBDB1C29981C23004F3381 /* FindAccelerationTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BBDB1B29981C23004F3381 /* FindAccelerationTabView.swift */; };
+		B9BBDB1E29981C30004F3381 /* FindTimeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BBDB1D29981C30004F3381 /* FindTimeTabView.swift */; };
 		B9D576732992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D576722992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift */; };
 		B9D576772992B3ED00A0CF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D576762992B3ED00A0CF97 /* Assets.xcassets */; };
 		B9D5767A2992B3ED00A0CF97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D576792992B3ED00A0CF97 /* Preview Assets.xcassets */; };
@@ -32,6 +35,9 @@
 		B9B5EC242995812400AB0631 /* FindVelocityTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVelocityTabView.swift; sourceTree = "<group>"; };
 		B9B5EC272995844B00AB0631 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		B9B5EC292995852900AB0631 /* ResultVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVIew.swift; sourceTree = "<group>"; };
+		B9BBDB1929981B8F004F3381 /* FindInitialVelocityTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindInitialVelocityTabView.swift; sourceTree = "<group>"; };
+		B9BBDB1B29981C23004F3381 /* FindAccelerationTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAccelerationTabView.swift; sourceTree = "<group>"; };
+		B9BBDB1D29981C30004F3381 /* FindTimeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTimeTabView.swift; sourceTree = "<group>"; };
 		B9D5766F2992B3EA00A0CF97 /* EndOfModInteractiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndOfModInteractiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D576722992B3EA00A0CF97 /* EndOfModInteractiveAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfModInteractiveAppApp.swift; sourceTree = "<group>"; };
 		B9D576762992B3ED00A0CF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				B9B5EC242995812400AB0631 /* FindVelocityTabView.swift */,
+				B9BBDB1929981B8F004F3381 /* FindInitialVelocityTabView.swift */,
+				B9BBDB1B29981C23004F3381 /* FindAccelerationTabView.swift */,
+				B9BBDB1D29981C30004F3381 /* FindTimeTabView.swift */,
 			);
 			path = TabViews;
 			sourceTree = "<group>";
@@ -202,10 +211,13 @@
 				B9A0A7C729945E850017C5DD /* Results.swift in Sources */,
 				B9A0A7C1299456E00017C5DD /* FindUnknownListView.swift in Sources */,
 				B9A0A7BD299450120017C5DD /* FindTime.swift in Sources */,
+				B9BBDB1A29981B8F004F3381 /* FindInitialVelocityTabView.swift in Sources */,
 				B9B5EC2A2995852900AB0631 /* ResultVIew.swift in Sources */,
 				B9A0A7C529945AA20017C5DD /* FormulaListView.swift in Sources */,
 				B9B5EC282995844B00AB0631 /* HistoryView.swift in Sources */,
+				B9BBDB1C29981C23004F3381 /* FindAccelerationTabView.swift in Sources */,
 				B9D576832992BE1000A0CF97 /* FindVelocity.swift in Sources */,
+				B9BBDB1E29981C30004F3381 /* FindTimeTabView.swift in Sources */,
 				B9A0A7BB29944B700017C5DD /* FindInitialVelocity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

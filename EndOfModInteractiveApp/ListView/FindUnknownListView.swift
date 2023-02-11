@@ -19,7 +19,7 @@ struct FindUnknownListView: View {
                 })
                 
                 NavigationLink(destination: {
-                    FindInitialVelocity()
+                    FindInitialVelocityTabView()
                 }, label: {
                     Text("Find The Initial Velocity")
                 })

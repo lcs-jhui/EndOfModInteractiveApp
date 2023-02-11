@@ -14,6 +14,9 @@ struct FindInitialVelocity: View {
     @State var inputAcceleration = ""
     @State var inputTime = ""
     
+    //Save history
+    @Binding var history: [Result]
+    
     //MARK: Computed Properties
     var calculatedInitialVelocity: Double? {
         
@@ -115,6 +118,22 @@ struct FindInitialVelocity: View {
                         .font(.largeTitle)
                 }
                 
+                Button(action: {
+                    
+                   let priorResult = Result(velocity: inputVelocity,
+                                            initialVelocity: initialVelocityResultTwoDecimal,
+                                            time: inputTime,
+                                            acceleration: inputAcceleration)
+                    
+                    //Save prior result
+                    history.append(priorResult)
+                    
+                }, label: {
+                    Text("Save")
+                        .font(.headline.smallCaps())
+                })
+                .buttonStyle(.bordered)
+                
                 Spacer()
                 
                 
@@ -127,7 +146,7 @@ struct FindInitialVelocity: View {
 struct FindInitialVelocity_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            FindInitialVelocity()
+            FindInitialVelocity(history: Binding.constant(historyForPreviews))
         }
     }
 }
